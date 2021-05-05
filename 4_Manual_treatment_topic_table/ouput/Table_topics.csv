@@ -1,0 +1,40 @@
+Index,Name,Terms,Category,Sector,Relevant IPCC WG3 chapter,T0.02,T0.02Title
+0,Energy efficiency,energi_effici_consumpt_save_demand,efficiency,,5 to 11,1732,1018
+1,Climate change,climat_chang_temperatur_futur_project,impacts,,WG2,2000,1038
+2,Power,power_generat_plant_sector_capac,sectoral,energy,6,797,416
+3,Vehicle,vehicl_fleet_car_hybrid_passeng,sectoral,transport,10,387,227
+4,Cement,industri_cement_sector_product_process,sectoral,industry,11,497,301
+5,Forest,forest_sequestr_wood_sink_stock,sectoral,landuse,7,314,188
+6,Steel/Iron,steel_iron_product_materi_save,sectoral,industry,11,105,70
+7,Buildings,build_residenti_stock_sector_construct,sectoral,buildings,8,356,180
+8,Water,water_resourc_basin_river_irrig,impacts,,WG2,291,133
+9,Air Pollution,air_pollut_pm2_qualiti_health,impacts,,WG2,674,252
+10,Electricity,electr_generat_demand_grid_suppli,sectoral,energy,6,904,471
+11,CCS,ccs_storag_captur_geolog_plant,technology,,6,251,127
+12,Transport,transport_sector_road_passeng_freight,sectoral ,transport,10,567,298
+13,Policy-Dvlpt-Eco,polici_develop_econom_countri_use,all-encompassing,,,4687,1324
+14,Agriculture,agricultur_food_product_livestock_farm,sectoral,landuse,7,351,188
+15,Tax,tax_revenu_polici_equilibrium_model,policy,,13,213,117
+16,Heat Pump,heat_pump_district_cool_boiler,sectoral,buildings,9,272,94
+17,Consumption,intens_structur_consumpt_factor_growth,other,,5,936,221
+18,Scenario,scenario_model_bau_refer_three,method,,3,1428,553
+19,Wind/Solar,wind_solar_capac_instal_photovolta,sectoral,,6,324,107
+20,Costs,cost_abat_option_benefit_margin,policy,,12,761,229
+21,Coal,coal_fire_plant_natur_phase,sectoral,energy,6,360,126
+22,Nuclear,nuclear_plant_power_mix_new,sectoral,energy,6,160,87
+23,Fuel,fuel_fossil_diesel_altern_biofuel,sectoral ,energy,6,586,157
+24,Renewable Energies,renew_energi_sourc_share_res,sectoral,energy,6,540,359
+25,Flood Risk,flood_risk_coastal_sea_disast,impacts,,WG2,284,127
+26,Technology,technolog_advanc_deploy_low_clean,technology,,16,421,168
+27,Bioenergy,biomass_bioenergi_biofuel_residu_wood,sectoral,energy,7.12,345,160
+28,Urban,urban_citi_area_popul_develop,policy,,8,331,197
+29,Hydrogen,hydrogen_cell_chain_produc_product,sectoral,energy,6,94,60
+30,Permit market,price_et_market_trade_polici,policy,,13,419,241
+31,Drought,drought_precipit_sever_frequenc_index,impacts,,WG2,89,39
+32,Crop yield,crop_yield_soil_wheat_fertil,sectoral,landuse,7,302,113
+33,Peak,peak_around_reach_earlier_non,policy,,3,173,65
+34,Oil,oil_product_crude_natur_export,sectoral,energy,6,200,72
+35,Land Use,land_use_soil_area_chang,sectoral,landuse,7,420,253
+36,Target/INDC,target_achiev_indc_meet_ndc,policy,,13,706,200
+37,Waste,wast_landfil_solid_municip_treatment,sectoral,waste,11,222,73
+38,System,system_model_transit_integr_pathway,method,,,543,339

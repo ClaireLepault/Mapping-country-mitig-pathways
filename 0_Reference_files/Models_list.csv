@@ -1,0 +1,134 @@
+source ,model_search_expression,model_name
+Allen_al_2016,(?i)input-output,Input-Output
+Allen_al_2016,EORA,EORA
+Allen_al_2016,(?i)EXIPOL,EXIPOL
+Allen_al_2016,(?i)WIOD,WIOD
+Allen_al_2016,(?i)PROSUITE DSS,PROSUITE DSS
+Allen_al_2016,(?i)EUREAPA,EUREAPA
+Allen_al_2016,(?i)social accounting matrix,Social Accounting Matrices
+Allen_al_2016,(?i)system of national account,Systems of National Accounts
+Allen_al_2016,JEDI,JEDI
+Allen_al_2016,(?i)Social Accounting Matrice,Social Accounting Matrice
+Allen_al_2016,(?i)System of National Account,System of National Account
+Allen_al_2016,FUGI,FUGI
+Allen_al_2016,(?i)NEMESIS,NEMESIS
+Allen_al_2016,(?i)GINFORS,GINFORS
+Allen_al_2016,(?i)Global Policy Model,Global Policy Model
+Allen_al_2016,INFORGE,INFORGE
+Allen_al_2016,(?i)PANTA RHEI,PANTA RHEI
+Allen_al_2016,(?i)GEM-E3,GEM-E3
+Allen_al_2016,(?i)GEM-CCGT,GEM-CCGT
+Allen_al_2016,AMIGA,AMIGA
+Allen_al_2016,EDGE,EDGE
+Allen_al_2016,(?i)GEMINI-E3,GEMINI-E3
+Allen_al_2016,(?i)MAMS,MAMS
+Allen_al_2016,(?i)123PRSP,123PRSP
+Allen_al_2016,(?i)IMMPA,IMMPA
+Allen_al_2016,(?i)GTAP,GTAP
+Allen_al_2016,(?i)Gdyn,Gdyn
+Allen_al_2016,(?i)WorldScan,WorldScan
+Allen_al_2016,(?i)ENV-Linkages,ENV-Linkages
+Allen_al_2016,ENVISAGE,ENVISAGE
+Allen_al_2016,(?i)GIDD,GIDD
+Allen_al_2016,MIRAGE,MIRAGE
+Allen_al_2016,MAGNET,MAGNET
+Allen_al_2016,(?i)LEITAP,LEITAP
+Allen_al_2016,ALCES,ALCES
+Allen_al_2016,(?i)Australian Stocks and Flows,Australian Stocks and Flows
+Allen_al_2016,(?i)Sustainable Europe Model,Sustainable Europe Model
+Allen_al_2016,(?i)World Simulator,World Simulator
+Allen_al_2016,(?i)World3,World3
+Allen_al_2016,ASTRA,ASTRA
+Allen_al_2016,(?i)Polestar,Polestar
+Allen_al_2016,GUMBO,GUMBO
+Allen_al_2016,PHOENIX,PHOENIX
+Allen_al_2016,POLES,POLES
+Allen_al_2016,(?i)MARKAL,MARKAL
+Allen_al_2016,TIMES,TIMES
+Allen_al_2016,MESSAGE,MESSAGE
+Allen_al_2016,PRIMES,PRIMES
+Allen_al_2016,(?i)T-REMOVE,T-REMOVE
+Allen_al_2016,(?i)World Energy Model,World Energy Model
+Allen_al_2016,(?i)OseMOSYS,OseMOSYS
+Allen_al_2016,(?i)GLOBIOM,GLOBIOM
+Allen_al_2016,(?i)MAED-2,MAED-2
+Allen_al_2016,PAMS,PAMS
+Allen_al_2016,Powerplan,Powerplan
+Allen_al_2016,TIMER,TIMER
+Allen_al_2016,BUENAS,BUENAS
+Allen_al_2016,(?i)AQUACROP,AQUACROP
+Allen_al_2016,LUDAS,LUDAS
+Allen_al_2016,(?i)E3ME,E3ME
+Allen_al_2016,(?i)E3MG,E3MG
+Allen_al_2016,GIAM,GIAM
+Allen_al_2016,IMPACT,IMPACT
+Allen_al_2016,CLEWS,CLEWS
+Allen_al_2016,(?i)MuSIASEM,MuSIASEM
+Allen_al_2016,(?i)DeSurvey,DeSurvey
+Allen_al_2016,MERGE,MERGE
+Allen_al_2016,(?i)IMACLIM,IMACLIM
+Allen_al_2016,AIM,AIM
+Allen_al_2016,ASF,ASF
+Allen_al_2016,CLUE,CLUE
+Allen_al_2016,IMAGE,IMAGE
+Allen_al_2016,(?i)GISMO,GISMO
+Allen_al_2016,(?i)International Futures,International Futures
+Allen_al_2016,(?i)MESSAGE-MACRO,MESSAGE-MACRO
+Allen_al_2016,(?i)Threshold 21,Threshold 21
+Allen_al_2016,(?i)MARKAL-MACRO,MARKAL-MACRO
+Allen_al_2016,(?i)TIMES-MACRO,TIMES-MACRO
+Allen_al_2016,MIMES,MIMES
+Allen_al_2016,FUND,FUND
+Allen_al_2016,LEAP,LEAP
+Allen_al_2016,REMIND,REMIND
+Allen_al_2016,WITCH,WITCH
+Allen_al_2016,DICE,DICE
+Allen_al_2016,RICE,RICE
+Allen_al_2016,GAINS,GAINS
+Allen_al_2016,(?i)EC4MACS,EC4MACS
+Allen_al_2016,(?i)GCAM,GCAM
+Allen_al_2016,PAGE,PAGE
+Allen_al_2016,InVEST,InVEST
+Allen_al_2016,(?i)GLOBIO,GLOBIO
+Allen_al_2016,(?i)MOSAICC,MOSAICC
+Allen_al_2016,(?i)LowGrow,LowGrow
+IAMC,AIM,AIM
+IAMC,(?i)BET-GLUE,BET-GLUE
+IAMC,BLUES,BLUES
+IAMC,(?i)C3IAM,C3IAM
+IAMC,TIMES,TIMES
+IAMC,COFFEE,COFFEE
+IAMC,(?i)DNE21,DNE21
+IAMC,(?i)E3ME,E3ME
+IAMC,(?i)E3MG,E3MG
+IAMC,ELENA,ELENA
+IAMC,EMPIRE,EMPIRE
+IAMC,(?i)ENV-Linkages,ENV-Linkages
+IAMC,EPPA,EPPA
+IAMC,(?i)EXIOMOD,EXIOMOD
+IAMC,(?i)FASOM-GHG,FASOM-GHG
+IAMC,FUND,FUND
+IAMC,(?i)GCAM,GCAM
+IAMC,(?i)GEM-E3,GEM-E3
+IAMC,GRACE,GRACE
+IAMC,ICES,ICES
+IAMC,(?i)International Futures,International Futures
+IAMC,(?i)IGSM,IGSM
+IAMC,(?i)IMACLIM,IMACLIM
+IAMC,IMAGE,IMAGE
+IAMC,IPAC,IPAC
+IAMC,(?i)MARKAL,MARKAL
+IAMC,MERGE,MERGE
+IAMC,MESSAGE,MESSAGE
+IAMC,(?i)GLOBIOM,GLOBIOM
+IAMC,(?i)Oxford Global,Oxford Global
+IAMC,(?i)Plan4res,Plan4res
+IAMC,POLES,POLES
+IAMC,(?i)PROMETHEUS,PROMETHEUS
+IAMC,REMES,REMES
+IAMC,REMIND,REMIND
+IAMC,(?i)TEMPEST,TEMPEST
+IAMC,(?i)US-REGEN,US-REGEN
+IAMC,WITCH,WITCH
+Authors,(?i)computable general equilibrium,CGE
+Authors,(?i)integrated assessment model,IAM
