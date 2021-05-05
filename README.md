@@ -1,7 +1,7 @@
 # Mapping Forward-Looking Mitigation Studies at Country Level
 
 # Repository information
-This repository contains the code and data for the paper *Mapping Forward-Looking Mitigation Studies at Country Level* published in Environmental Research Letters:
+This repository contains the code and data for the paper *Mapping Forward-Looking Mitigation Studies at Country Level*.
 
 For copyright reasons, the abstracts from Scopus and Web of Science can not be published. To reproduce the analysis, it would then be necessary to download the abstracts of the 4691 references, either using the Scopus or Web of Science IDs provided, or the query presented in [1_Search_equation.ipynb](1_Constitution_database/1_Search_equation.ipynb).
 
@@ -45,13 +45,40 @@ In each following folder, the files created during this step of the analysis are
 
 ### Dependencies
 
-This code has been tested with Python 3.7. The core package requirements are:
+#### Python 3.7 
+The core package requirements are:
 
-* pandas
+* pandas (version 1.0.3)
+* numpy (version 1.16.4)
+* stemming (version 1.0.1)
+* nltk (version 3.5)
+* joblib (version 0.15.1)
+* sklearn (version 0.0)
+* gensim (version 3.8.3)
+* pyLDAvis (version 2.1.2)
+* matplotlib (version 3.1.0)
+* seaborn (version 0.10.1)
 
-* numpy 
+and modules :
 
-* joblib
+* operator
+* string
+* itertools
 
-* plotly (tested with v4.2.1)
+#### R 3.6.3 
+The core package requirements are :
 
+* tidyverse (1.3.0)
+* dplyr (0.8.4)
+* sf (0.9.7)
+* ggrepel (0.8.1)
+* scales (1.1.1)
+* hrbrthemes (0.6.0)
+* ggpubr (0.2.4)
+* magick (2.5.2)
+* ggpattern (0.1.3)
+* ggplot2 (3.3.3)
+* stargazer (5.2.2)
+* viridis (0.5.1)
+* extrafont (0.17)
+* RColorBrewer (1.1.2)
