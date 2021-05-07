@@ -1,7 +1,7 @@
 # Mapping Forward-Looking Mitigation Studies at Country Level
 
 # Repository information
-This repository contains the replication code and data for the paper *Mapping Forward-Looking Mitigation Studies at Country Level*.
+This repository contains the replication code and data for the paper *Mapping Forward-Looking Mitigation Studies at Country Level* (Claire Lepault and Franck Lecocq, 2021).
 
 For copyright reasons, the abstracts from Scopus and Web of Science can not be published. To reproduce the analysis, it would then be necessary to download the abstracts of the 4691 references, either using the Scopus or Web of Science IDs provided, or the query presented in [1_Search_equation.ipynb](1_Constitution_database/1_Search_equation.ipynb). To reproduce exactly the download process, we refer you to an older tutorial on systematic search on Scopus and Web of Science, available on Github : https://github.com/ClaireLepault/systematic-search-wos-scopus.
 
