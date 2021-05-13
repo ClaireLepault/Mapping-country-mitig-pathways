@@ -48,7 +48,7 @@ In each following folder (corresponding to a stage of the analysis), the files b
     * the database *database_one_row_each_paper.csv* containing one row for each publication, if numerous countries or models are related to the paper, the column "Country" and "model" present the first one by alphabetical order
 
 
-* [6_Figures](6_Figures) (Python and R languages, prefix name of each notebook precises the language used for each figure) : presents the code producing all the figures (except Figure A6, coming from the interactive visualization *vis.html*). Inputs are the final databases of [5_Final_databases](5_Final_databases) as well as the [0_Reference_files](0_Reference_files). Outputs are the figures of the munuscript.
+* [6_Figures](6_Figures) (Python and R languages, prefix name of each notebook precises the language used) : presents the code producing all the figures (except Figure A6, coming from the interactive visualization *vis.html*). Inputs are the final databases of [5_Final_databases](5_Final_databases) as well as the [0_Reference_files](0_Reference_files). Outputs are the figures of the munuscript.
 
 ### Dependencies
 
