@@ -27,7 +27,7 @@ In each following folder (corresponding to a stage of the analysis), the files b
     * the database *database_one_row_each_paper.csv* containing one row for each publication, if numerous countries or models are related to the paper, the column "Country" and "model" present the first one by alphabetical order
 
 
-* [3_Topic_modeling](3_Topic_modeling) : seven notebooks detail  step-by-step the Non-Negative Matrix Factorization (NMF) approach and its parameters selection. Thanks to Derek Greene, who proposes a great [tutorial](https://github.com/derekgreene/topic-model-tutorial) on topic modeling with NMF including the selection of the parameter *k* (number of topics) using topic coherence. We extend here the method to the selection of the regularization parameters &#945; and l<sub>1</sub>. Input is the abstract column from [database_one_row_each_paper.csv](2_Treatment_database/output/database_one_row_each_paper.csv). Intermediaries files are :
+* [3_Topic_modeling](3_Topic_modeling) : seven notebooks detail  step-by-step the Non-Negative Matrix Factorization (NMF) approach and its parameters selection. Thanks to Derek Greene, who proposes a great [tutorial](https://github.com/derekgreene/topic-model-tutorial) on topic modeling with NMF including the selection of the parameter *k* (number of topics) using topic coherence. We extend here the method to the selection of the regularization parameters &#945; and l<sub>1</sub>. Input is the abstract column from the database *2_Treatment_database/output/database_one_row_each_paper.csv*. <br> Intermediaries files are :
    * the list *processed_abstracts.csv* of the 4691 preprocessed abstracts 
    * the file *topic_models.pkl* containing the 16,731 matrix decompositions for the different combinations (k, &#945; , l<sub>1</sub>). Due to its size (16.8 GB), it could not be uploaded in the *interm* folder.
    * the file *word2vec.wordvectors* containing vector positions in a 500-dimensional space of the word stems from the preprocessed abstracts corpus <br>
@@ -39,7 +39,7 @@ In each following folder (corresponding to a stage of the analysis), the files b
    * the table *Table_topics_count.csv* presenting how many papers have each topic according to both topic classifications
    * the interactive visualization *vis.html* characterizing how topics relate to each other based on a Principal Components Analysis
 
-* [4_Manual_treatment_topic_table](4_Manual_treatment_topic_table) : Input is the [table counting topic-papers association](3_Topic_modeling/output/Table_topics_count.csv). Topic "final names" are added manually. 
+* [4_Manual_treatment_topic_table](4_Manual_treatment_topic_table) : Input is the table counting topic-papers association *3_Topic_modeling/output/Table_topics_count.csv*. Topic "final names" are added manually to the output database *Table_topics.csv*. 
 
 
 * [5_Final_databases](5_Final_databases) : contains one Jupyter notebook (R language) merging the databases with additional treatments from [2_Treatment_database](2_Treatment_database), the topic modeling classification from [3_Topic_modeling](3_Topic_modeling) and the topic names from [4_Manual_treatment_topic_table](4_Manual_treatment_topic_table). The three resulting final databases are:
