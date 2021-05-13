@@ -12,10 +12,10 @@ All the code is presented in Jupyter notebook format, with detailed comments to 
 There are seven folders presenting all the steps of the analysis, from the constitution of the database to the creation of the figures :
 
 * [0_Reference_files](0_Reference_files): Contains the reference files used for the analysis <br>
-    * **country_shapefile** : folder containing the country shapefile from [Natural Earth](https://www.naturalearthdata.com/)
-    * **CAIT_GHG_2016.csv** : historical greenhouse gas emissions at country level in 2016 (all gases, including emissions of the Land-Use Change and Forestry sector) from the Climate Watch Historical GHG Emissions (2021. Washington, DC: World Resources Institute). Available online at: https://www.climatewatchdata.org/ghg-emissions
-    * **Models_list.csv**: the model names that we search in the metadata (title, abstract, author keywords) of each publication. This list results from the association of models reviewed in [Allen et al (2016)](https://www.sciencedirect.com/science/article/abs/pii/S1462901116306712) and the list of models of the Integrated Assessment Modeling Consortium (available online at https://www.iamconsortium.org/resources/models-documentation/, consulted on April 30, 2021). We finally added to the list the "integrated assessment model" and the "computable general equilibrium" model. 
-    * **UNSD_database.csv**: list of countries from the United Nations Statistics Division. Available online at:https://unstats.un.org/unsd/methodology/m49/overview/. Demonyms have been manually added.
+    * *country_shapefile* : folder containing the country shapefile from [Natural Earth](https://www.naturalearthdata.com/)
+    * *CAIT_GHG_2016.csv* : historical greenhouse gas emissions at country level in 2016 (all gases, including emissions of the Land-Use Change and Forestry sector) from the Climate Watch Historical GHG Emissions (2021. Washington, DC: World Resources Institute). Available online at: https://www.climatewatchdata.org/ghg-emissions
+    * *Models_list.csv*: the model names that we search in the metadata (title, abstract, author keywords) of each publication. This list results from the association of models reviewed in [Allen et al (2016)](https://www.sciencedirect.com/science/article/abs/pii/S1462901116306712) and the list of models of the Integrated Assessment Modeling Consortium (available online at https://www.iamconsortium.org/resources/models-documentation/, consulted on April 30, 2021). We finally added to the list the "integrated assessment model" and the "computable general equilibrium" model. 
+    * *UNSD_database.csv*: list of countries from the United Nations Statistics Division. Available online at:https://unstats.un.org/unsd/methodology/m49/overview/. Demonyms have been manually added.
 
 In each following folder (corresponding to a stage of the analysis), the files being used in the following stages are in the *output* folder. The files being intermediaries within each stage are in the *interm* folder.
 
@@ -23,32 +23,32 @@ In each following folder (corresponding to a stage of the analysis), the files b
 
 
 * [2_Treatment_database](2_Treatment_database) : presents additional treatment to the original database from WoS and Scopus. Country names, demonyms and acronyms (present in the title) are associated to each publication. Horizon year horizon year in [2025; 2100] and model names (present in the title, abstract or keywords) are then added to the database. Input is the output database of [1_Constitution_database](1_Constitution_database)). Output databases are : 
-    * [database_multi_rows_each_paper.csv](2_Treatment_database/output/database_multi_rows_each_paper.csv)* : contains one row for each publication-country-model association
-    * [database_one_row_each_paper.csv](2_Treatment_database/output/database_one_row_each_paper.csv) : each row corresponds to one publication, if numerous countries or models are related to the paper, the column "Country" and "model" present the first one by alphabetical order
+    * the database *database_multi_rows_each_paper.csv* containing one row for each publication-country-model association
+    * the database *database_one_row_each_paper.csv* containing one row for each publication, if numerous countries or models are related to the paper, the column "Country" and "model" present the first one by alphabetical order
 
 
 * [3_Topic_modeling](3_Topic_modeling) : seven notebooks detail  step-by-step the Non-Negative Matrix Factorization (NMF) approach and its parameters selection. Thanks to Derek Greene, who proposes a great [tutorial](https://github.com/derekgreene/topic-model-tutorial) on topic modeling with NMF including the selection of the parameter *k* (number of topics) using topic coherence. We extend here the method to the selection of the regularization parameters &#945; and l<sub>1</sub>. Input is the abstract column from [database_one_row_each_paper.csv](2_Treatment_database/output/database_one_row_each_paper.csv). Intermediaries files are :
-* the [list](3_Topic_modeling/interm/processed_abstracts.csv) of the 4691 preprocessed abstracts 
-* the file "topic_models.pkl" containing the 16,731 matrix decompositions for the different combinations (k, &#945; , l<sub>1</sub>). Due to its size (16.8 GB), it could not be uploaded in the *interm* folder.
-* the file "word2vec.wordvectors" containing vector positions in a 500-dimensional space of the word stems from the preprocessed abstracts corpus
+   * the list *processed_abstracts.csv* of the 4691 preprocessed abstracts 
+   * the file *topic_models.pkl* containing the 16,731 matrix decompositions for the different combinations (k, &#945; , l<sub>1</sub>). Due to its size (16.8 GB), it could not be uploaded in the *interm* folder.
+   * the file *word2vec.wordvectors* containing vector positions in a 500-dimensional space of the word stems from the preprocessed abstracts corpus
 Output files are : 
-* the optimal NMF model (model_selected.pkl) containing the matrices *W* and *H* corresponding to the combination (k, &#945; , l<sub>1</sub>) maximizing the topic coherence score
-* the [database](3_Topic_modeling/output/database_seuil_0.02.csv) whith topic classification (topic name based of the five weightest terms) using the threshold 0.02
-* the [database](3_Topic_modeling/output/database_titre_seuil_0.02.csv) whith topic classification (topic name based of the five weightest terms) using the threshold 0.02 *AND* the presence of one the five weightest terms in the title
-* the [database](3_Topic_modeling/output/df_topic_abs_classification.csv) presenting the publications associated to each topic with topic classification using the threshold 0.02
-* the [table](3_Topic_modeling/output/Table_topics_count.csv) presenting how many papers have each topic according to both topic classifications
-* the interactive visualiztion (vis.html) characterizing how topics relate to each other based on a Principal Components Analysis
+   * the optimal NMF model (model_selected.pkl) containing the matrices *W* and *H* corresponding to the combination (k, &#945; , l<sub>1</sub>) maximizing the topic coherence score
+   * the database *database_seuil_0.02.csv* whith topic classification (topic name based of the five weightest terms) using the threshold 0.02
+   * the database *database_titre_seuil_0.02.csv* whith topic classification (topic name based of the five weightest terms) using the threshold 0.02 *AND* the presence of one the five weightest terms in the title
+   * the database *df_topic_abs_classification.csv* presenting the publications associated to each topic with topic classification using the threshold 0.02
+   * the table *Table_topics_count.csv* presenting how many papers have each topic according to both topic classifications
+   * the interactive visualization *vis.html* characterizing how topics relate to each other based on a Principal Components Analysis
 
 * [4_Manual_treatment_topic_table](4_Manual_treatment_topic_table) : Input is the [table counting topic-papers association](3_Topic_modeling/output/Table_topics_count.csv). Topic "final names" are added manually. 
 
 
 * [5_Final_databases](5_Final_databases) : contains one Jupyter notebook (R language) merging the databases with additional treatments from [2_Treatment_database](2_Treatment_database), the topic modeling classification from [3_Topic_modeling](3_Topic_modeling) and the topic names from [4_Manual_treatment_topic_table](4_Manual_treatment_topic_table). The three resulting final databases are:
-    * [database_multi_rows_each_paper.csv](5_Final_databases/output/database_multi_rows_each_paper.csv) : contains one row for each publication-country-model association
-    * [database_multi_rows_each_paper_one_per_country.csv](5_Final_databases/output/database_multi_rows_each_paper_one_per_country.csv) : contains one row for each publication-country association, if numerous models are related to the paper, the column "model" present the first one by alphabetical order
-    * [database_one_row_each_paper.csv](5_Final_databases/output/database_one_row_each_paper.csv) : each row corresponds to one publication, if numerous countries or models are related to the paper, the column "Country" and "model" present the first one by alphabetical order
+    * the database *database_multi_rows_each_paper.csv* containing one row for each publication-country-model association
+    * the database *database_multi_rows_each_paper_one_per_country.csv* containing one row for each publication-country association, if numerous models are related to the paper, the column "model" present the first one by alphabetical order
+    * the database *database_one_row_each_paper.csv* containing one row for each publication, if numerous countries or models are related to the paper, the column "Country" and "model" present the first one by alphabetical order
 
 
-* [6_Figures](6_Figures) : presents the code producing all the figures (except Figure A6, coming from the [interactive visualization](3_Topic_modeling/7.Online_Visualization_topics.ipynb) showing relationship across topics). Inputs are the final databases as well as the reference files. Outputs are the figures.
+* [6_Figures](6_Figures) : presents the code producing all the figures (except Figure A6, coming from the interactive visualization *vis.html*). Inputs are the final databases as well as the reference files. Outputs are the figures.
 
 ### Dependencies
 
