@@ -31,6 +31,7 @@ In each following folder (corresponding to a stage of the analysis), the files b
    * the list *processed_abstracts.csv* of the 4691 preprocessed abstracts 
    * the file *topic_models.pkl* containing the 16,731 matrix decompositions for the different combinations (k, &#945; , l<sub>1</sub>). Due to its size (16.8 GB), it could not be uploaded in the *interm* folder.
    * the file *word2vec.wordvectors* containing vector positions in a 500-dimensional space of the word stems from the preprocessed abstracts corpus
+
 Output files are : 
    * the optimal NMF model (model_selected.pkl) containing the matrices *W* and *H* corresponding to the combination (k, &#945; , l<sub>1</sub>) maximizing the topic coherence score
    * the database *database_seuil_0.02.csv* whith topic classification (topic name based of the five weightest terms) using the threshold 0.02
