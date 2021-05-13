@@ -30,9 +30,8 @@ In each following folder (corresponding to a stage of the analysis), the files b
 * [3_Topic_modeling](3_Topic_modeling) : seven notebooks detail  step-by-step the Non-Negative Matrix Factorization (NMF) approach and its parameters selection. Thanks to Derek Greene, who proposes a great [tutorial](https://github.com/derekgreene/topic-model-tutorial) on topic modeling with NMF including the selection of the parameter *k* (number of topics) using topic coherence. We extend here the method to the selection of the regularization parameters &#945; and l<sub>1</sub>. Input is the abstract column from [database_one_row_each_paper.csv](2_Treatment_database/output/database_one_row_each_paper.csv). Intermediaries files are :
    * the list *processed_abstracts.csv* of the 4691 preprocessed abstracts 
    * the file *topic_models.pkl* containing the 16,731 matrix decompositions for the different combinations (k, &#945; , l<sub>1</sub>). Due to its size (16.8 GB), it could not be uploaded in the *interm* folder.
-   * the file *word2vec.wordvectors* containing vector positions in a 500-dimensional space of the word stems from the preprocessed abstracts corpus
-
-Output files are : 
+   * the file *word2vec.wordvectors* containing vector positions in a 500-dimensional space of the word stems from the preprocessed abstracts corpus <br>
+   Output files are : 
    * the optimal NMF model (model_selected.pkl) containing the matrices *W* and *H* corresponding to the combination (k, &#945; , l<sub>1</sub>) maximizing the topic coherence score
    * the database *database_seuil_0.02.csv* whith topic classification (topic name based of the five weightest terms) using the threshold 0.02
    * the database *database_titre_seuil_0.02.csv* whith topic classification (topic name based of the five weightest terms) using the threshold 0.02 *AND* the presence of one the five weightest terms in the title
